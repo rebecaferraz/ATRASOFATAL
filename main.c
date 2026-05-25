@@ -1,44 +1,47 @@
 #include <stdio.h>
-#include "cli-lib/include/screen.h"
-#include "cli-lib/include/keyboard.h"
-#include "cli-lib/include/timer.h"
+#include <stdlib.h>
+#include <string.h>
+#include "raylib.h"
 
-int main () {
+enum Tela{ //lista de opcoes exclusivas com nomes , tipo um semáforo  
+    MENU,
+    JOGO,
+    GAMEOVER,
+    RANKING,
+    ULTIMACENA
+};
+//funcoes protótipos
+enum Tela TelaMenu(); //retorna a funçao 
+enum Tela TelaJogo();
+enum Tela TelaGameOver();
+enum Tela TelaRanking();
+enum Tela TelaUltimaCena();
 
-    screenInit(1);
-    keyboardInit();
-    timerInit(50);
-
-    int ch = 0;
-    int x = 10;
-    int y = 10;
-
-    while(ch != 'q') {
-        if (keyhit()) {
-            ch = readch();
-
-            if(ch == 'w') y--;
-            if(ch == 's') y++;
-            if(ch == 'a') x--;
-            if(ch == 'd') x++;
-
-        }
-
-        if(timerTimeOver()) {
-            screenClear();
-
-            screenGotoxy(x,  y);
-            printf("P");
-
-            screenUpdate();
-
+int main (){
+    InitWindow(800, 600, "PIF: Atraso Fatal"); //iniciando janela
+    SetTargetFPS(60); //decidindo o fps
+    enum Tela telaAtual = MENU;
+    while (!WindowShouldClose()){ //loop raylib
+        switch (telaAtual){ //pq switch? pq é uma variavel  e várias opcoes fixas. 
+            //if/else seria melhor se as condicoes fossem variadas
+            case MENU:
+                telaAtual = TelaMenu();
+                break;
+            case JOGO:
+                telaAtual = TelaJogo();
+                break;
+            case GAMEOVER:
+                telaAtual = TelaGameOver();
+                break;
+            case RANKING:
+                telaAtual = TelaRanking();
+                break;
+            case ULTIMACENA:
+                telaAtual = TelaUltimaCena();
+                break;
         }
     }
-
-    keyboardDestroy();
-    screenDestroy();
-    timerDestroy();
+    CloseWindow(); //fecha a janela
 
     return 0;
-
 }

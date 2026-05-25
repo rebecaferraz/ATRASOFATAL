@@ -1,5 +1,4 @@
 all:
-	gcc main.c cli-lib/src/screen.c cli-lib/src/keyboard.c cli-lib/src/timer.c -I cli-lib/include -o jogo
-
+	gcc main.c -o jogo -I/opt/homebrew/include -L/opt/homebrew/lib -lraylib -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo
 run:
 	./jogo
