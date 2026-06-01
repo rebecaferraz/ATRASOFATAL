@@ -79,6 +79,7 @@ void mostrarRankingRecursivo(int scores[], int total, int atual, int posY);
 int main() {
     InitWindow(LARGURA, ALTURA, "PIF: Atraso Fatal");
     SetTargetFPS(60);
+    SetExitKey(0); //desativa o esc fechar a janela automaticamente
 
     enum Tela telaAtual = MENU;
     while (!WindowShouldClose()) {
@@ -268,8 +269,8 @@ enum Tela TelaJogo() {
         DrawRectangle(590, 16, (int)(190 * prog), 14, WHITE);
         DrawText(TextFormat("%d%%", (int)(prog*100)), 738, 13, 18, WHITE);
 
-        if (jogador.velocidade == 3) DrawText("RAPIDO!", 430, 14, 18, (Color){180,255,180,255});
-        if (jogador.velocidade == 1) DrawText("LENTO...", 422, 14, 18, (Color){255,230,130,255});
+        if (jogador.velocidade == 3) DrawText("RAPIDO!", (LARGURA - MeasureText("RAPIDO!", 18))/2, 55, 18, (Color){80,200,80,255});
+        if (jogador.velocidade == 1) DrawText("LENTO...", (LARGURA - MeasureText("LENTO...", 18))/2, 55, 18, (Color){220,180,50,255});
     EndDrawing();
 
     return JOGO;
