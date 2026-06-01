@@ -30,7 +30,7 @@ gcc main.c -o jogo -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
 <details>
 <summary>controles</summary>
 
-- W ou espaco: pular
+- W ou espaço: pular
 - A / D: mover
 
 </details>
@@ -41,7 +41,5 @@ gcc main.c -o jogo -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
 feito em C com raylib. usa lista encadeada pra gerenciar os objetos na tela, matriz pra definir o layout dos obstaculos em cada trecho, e salva o ranking em arquivo txt.
 
 </details>
-
----
 
 <p align="center">projeto da disciplina PIF, CESAR School 2026</p>
