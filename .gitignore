@@ -1,48 +1,39 @@
-# Prerequisites
+#arquivos intermediarios compilacao
 *.d
-
-# Object files
 *.o
 *.ko
 *.obj
 *.elf
-
-# Linker output
+#saida linker
 *.ilk
 *.map
 *.exp
-
-# Precompiled Headers
+#headers precompilados
 *.gch
 *.pch
-
-# Libraries
+#bibliotecas
 *.lib
 *.a
 *.la
 *.lo
-
-# Shared objects (inc. Windows DLLs)
+#bibliotecas dinamicas
 *.dll
 *.so
 *.so.*
 *.dylib
-
-# Executables
+#executaveis
 *.exe
 *.out
 *.app
 *.i*86
 *.x86_64
 *.hex
-
-# Debug files
+# rquivos de debug
 *.dSYM/
 *.su
 *.idb
 *.pdb
-
-# Kernel Module Compile Results
+#moduloskernel
 *.mod*
 *.cmd
 .tmp_versions/
@@ -50,8 +41,7 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
-
-# debug information files
+#debug 
 *.dwo
-cli-lib/
+#executavel jogo 
 jogo
