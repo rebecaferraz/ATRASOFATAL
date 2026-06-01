@@ -31,7 +31,7 @@ o jogador também pode encontrar itens especiais: o café concede vantagens temp
 - trabalho surpresa (vermelho): -vida, fica mais lento
 - mini-prova (amarelo): -vida, perde pontos
 
-desvie dos cones, arvores e carros pulando por cima
+desvie dos cones, arvores e carros pulando
 
 <details>
 <summary>sobre a implementacao</summary>
