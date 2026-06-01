@@ -42,4 +42,4 @@ feito em C com raylib. usa lista encadeada pra gerenciar os objetos na tela, mat
 
 </details>
 
-<p align="center">projeto da disciplina PIF, CESAR School 2026</p>
+<p align="center">Projeto da disciplina PIF | CESAR School 2026</p>
