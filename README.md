@@ -6,6 +6,12 @@ o jogo se passa em uma corrida até a CESAR School, onde o jogador precisa chega
 
 o jogador também pode encontrar itens especiais: o café concede vantagens temporárias como aumento de velocidade e recuperação de vida, enquanto o trabalho surpresa e a mini-prova atrapalham o avanço reduzindo vida e pontuação.
 
+## demo
+
+acesse o vídeo demo aqui: [https://youtu.be/4RVp_btZU2U](https://youtu.be/4RVp_btZU2U)
+
+> o arquivo de vídeo não foi incluído no repositório por causa do tamanho.
+
 ## como rodar
 
 **mac**
@@ -39,7 +45,5 @@ desvie dos cones, arvores e carros pulando
 feito em C com raylib. usa lista encadeada pra gerenciar os objetos na tela, matriz pra definir o layout dos obstaculos em cada trecho, e salva o ranking em arquivo txt.
 
 </details>
-
----
 
 <p align="center">projeto da disciplina PIF, CESAR School 2026</p>
