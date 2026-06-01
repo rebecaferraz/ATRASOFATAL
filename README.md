@@ -6,34 +6,24 @@ o jogo se passa em uma corrida até a CESAR School, onde o jogador precisa chega
 
 o jogador também pode encontrar itens especiais: o café concede vantagens temporárias como aumento de velocidade e recuperação de vida, enquanto o trabalho surpresa e a mini-prova atrapalham o avanço reduzindo vida e pontuação.
 
-<details>
-<summary>como compilar</summary>
+## como rodar
 
 **mac**
 
-```bash
-brew install raylib
-make
-make run
-```
+1. instala o raylib: `brew install raylib`
+2. compila: `make`
+3. roda: `make run`
 
 **windows (WSL)**
 
-```bash
-sudo apt update && sudo apt install libraylib-dev
-gcc main.c -o jogo -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
-./jogo
-```
+1. instala o raylib: `sudo apt install libraylib-dev`
+2. compila: `gcc main.c -o jogo -lraylib -lGL -lm -lpthread -ldl -lrt -lX11`
+3. roda: `./jogo`
 
-</details>
-
-<details>
-<summary>controles</summary>
+## controles
 
 - W ou espaço: pular
 - A / D: mover
-
-</details>
 
 <details>
 <summary>sobre a implementacao</summary>
@@ -42,4 +32,6 @@ feito em C com raylib. usa lista encadeada pra gerenciar os objetos na tela, mat
 
 </details>
 
-<p align="center">Projeto da disciplina PIF | CESAR School 2026</p>
+---
+
+<p align="center">projeto da disciplina PIF, CESAR School 2026</p>
