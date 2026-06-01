@@ -53,6 +53,4 @@ Usa lista encadeada pra gerenciar os objetos na tela, matriz pra definir o layou
 
 </details>
 
-
-
-Projeto da disciplina PIF:| CESAR School 2026
+Projeto da disciplina PIF | CESAR School 2026
