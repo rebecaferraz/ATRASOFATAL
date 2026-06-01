@@ -29,7 +29,7 @@ gcc main.c -o jogo -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
 <details>
 <summary>Controles</summary>
 
-- W ou espaco: pular
+- W ou espaço: pular
 - A / D: mover
 
 </details>
@@ -37,7 +37,7 @@ gcc main.c -o jogo -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
 <details>
 <summary>itens</summary>
 
-- Cafe (marrom): +vida, fica mais rapido
+- Café (marrom): +vida, fica mais rapido
 - Trabalho surpresa (vermelho): -vida, fica mais lento
 - Mini-prova (amarelo): -vida, perde pontos
 
