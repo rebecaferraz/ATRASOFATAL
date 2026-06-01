@@ -25,6 +25,14 @@ o jogador também pode encontrar itens especiais: o café concede vantagens temp
 - W ou espaço: pular
 - A / D: mover
 
+## itens
+
+- cafe (marrom): +vida, fica mais rapido
+- trabalho surpresa (vermelho): -vida, fica mais lento
+- mini-prova (amarelo): -vida, perde pontos
+
+desvie dos cones, arvores e carros pulando por cima
+
 <details>
 <summary>sobre a implementacao</summary>
 
